@@ -1,0 +1,59 @@
+# LaTeX-focused .gitignore for Final_Year_Report
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.history/
+*.code-workspace
+*~
+*.swp
+*.swo
+
+# LaTeX auxiliary and build files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.run.xml
+*.dvi
+*.ps
+
+# Glossaries, nomenclature, acronyms
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+
+# minted / pygments outputs
+_minted-*/
+minted-output/
+
+# latexmk/texlive intermediate log
+texput.log
+
+# IMPORTANT: Do NOT ignore PDFs globally to keep image assets (e.g., in Images/)
+# If you want to ignore the compiled PDF(s), uncomment one of the lines below:
+# main.pdf
+# *.pdf

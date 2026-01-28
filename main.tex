@@ -1,0 +1,138 @@
+\documentclass[12pt]{article}
+\usepackage{report}
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{tocloft}
+% \usepackage{glossaries}
+\usepackage[justification=centering]{caption}
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{chngcntr}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx} % for better column control
+\usepackage{caption}  % for table caption
+\usepackage{booktabs} % for better table lines
+\usepackage{enumitem}
+\usepackage{multirow}  % For multirow table cells
+\usepackage{xcolor}    % For colored cells (if not already loaded)
+
+% Define Gantt chart symbols
+\newcommand{\GantP}{\cellcolor{blue!30}P}      % Planning
+\newcommand{\GantD}{\cellcolor{green!30}D}     % Development
+\newcommand{\GantT}{\cellcolor{orange!30}T}    % Testing
+\newcommand{\GantY}{\cellcolor{red!30}Y}       % Deployment
+\newcommand{\GantC}{\cellcolor{gray!20}C}      % Continuous/Documentation
+
+\usepackage[acronym]{glossaries}  % Load glossaries package
+\makeglossaries  % Prepares glossaries for use
+
+% Define acronyms (abbreviations)
+\newacronym{cns}{CNS}{Central Nervous System}
+\newacronym{mri}{MRI}{Magnetic Resonance Imaging}
+\newacronym{cnn}{CNN}{Convolutional Neural Network}
+\newacronym{vgg16}{VGG16}{Visual Geometry Group 16-layer model}
+\newacronym{mern}{MERN}{MongoDB, Express.js, React.js, Node.js}
+\newacronym{json}{JSON}{JavaScript Object Notation}
+\newacronym{asr}{ASR}{Age-Standardized Rate}
+\newacronym{relu}{ReLU}{Rectified Linear Unit}
+\newacronym{ai}{AI}{Artificial Intelligence}
+\newacronym{hmac}{HMAC}{Hash-based Message Authentication Code}
+\newacronym{sha256}{SHA256}{Secure Hash Algorithm 256-bit}
+\newacronym{rsa}{RSA}{Rivest–Shamir–Adleman}
+\newacronym{jwt}{JWT}{JSON Web Token}
+
+
+\title{Project proposal for BRAIN TUMOR ANALYSIS}
+\author{Rohan Khanal}
+\date{\today}
+
+\begin{document}
+
+\input{sec/titlepage}
+\thispagestyle{empty} 
+\input{sec/coverpage} 
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{roman}
+\input{sec/recommendation}
+
+\newpage
+\input{sec/declaration.tex}
+
+\newpage
+\input{sec/approval.tex}
+
+\newpage
+\input{sec/ack.tex}
+
+\newpage
+\input{sec/abstract.tex}
+
+% Table of contents
+\newpage
+{
+  \setlength{\parskip}{0em}
+  \renewcommand{\contentsname}{}
+  \section*{\Large\centering \textbf{CONTENTS}}
+  \tableofcontents
+}
+
+% List of Abbreviations - if any
+\newpage
+\input{sec/abbre.tex}
+
+% List of figures - if any
+\newpage
+{
+  \renewcommand{\listfigurename}{}
+  \section*{\Large\centering \textbf{LIST OF FIGURES}}
+  \listoffigures
+  \addcontentsline{toc}{section}{List of Figures}
+}
+
+\newpage
+{
+  \renewcommand{\listtablename}{}
+  \section*{\Large\centering \textbf{LIST OF TABLES}}
+  \listoftables
+  \addcontentsline{toc}{section}{List of Tables}
+}
+
+\newpage
+\pagenumbering{arabic}
+\input{chapters/one.tex} % Ensure this file exists and is correctly formatted
+% \pagenumbering{arabic}
+
+\newpage
+\input{chapters/two.tex}
+
+\newpage
+\input{chapters/three.tex}
+
+\newpage
+\input{chapters/four.tex}
+
+\newpage
+\input{chapters/five.tex}
+
+\newpage
+\input{chapters/six.tex}
+
+{
+\newpage
+\section*{\Large\centering \textbf{REFERENCES}}
+\addcontentsline{toc}{section}{REFERENCES}
+\renewcommand{\refname}{}
+\bibliographystyle{IEEEtran}
+\bibliography{biblio}
+}
+
+\newpage
+\input{sec/appendix.tex}
+\end{document}

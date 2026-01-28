@@ -1,0 +1,16 @@
+\stepcounter{section}
+\section*{\Large\centering {CHAPTER 6 \\ CONCLUSION AND FUTURE RECOMMENDATIONS}}
+\addcontentsline{toc}{section}{Conclusion and Future Recommendations}
+
+\subsection{Conclusion}
+The application provides an effective tool for analyzing brain MRI images and managing results. Users can upload images, receive predictions on tumor presence, and access past results along with profile management features. The frontend is built with React (Vite + Tailwind) served by Nginx, the backend uses Node/Express with MongoDB, and the ML model runs in Python. The system is thoroughly tested to ensure reliability and smooth deployment. The model demonstrates excellent performance, with almost all metrics above 0.97. Precision measures how many predicted positive cases were correct, recall measures how many actual positives were correctly identified, and F1-score balances precision and recall. Accuracy reflects overall correctness, support indicates sample counts per class, macro average treats all classes equally, and weighted average accounts for class size. Overall, the system achieves highly accurate tumor classification, making it a dependable tool for MRI analysis.
+\subsection{Future Recommendations}
+\begin{itemize}
+    \item \textbf{Expand Model Types:} Include additional brain tumor types or other neurological conditions to improve coverage.
+    \item \textbf{Improve User Interface:} Enhance UI/UX for easier navigation, visualization of results, and accessibility.
+    \item \textbf{Strengthen Security:} Implement advanced authentication, encryption, and secure data storage practices.
+    \item \textbf{Automate CI/CD:} Set up continuous integration and deployment pipelines for faster updates and maintenance.
+    \item \textbf{Integrate Cloud Deployment:} Deploy the system on a cloud platform for scalability and remote access.
+    \item \textbf{Enhance ML Model:} Continuously retrain the model with more data to improve accuracy and robustness.
+    \item \textbf{Add Reporting Features:} Provide detailed analytics and visual reports for medical professionals.
+\end{itemize}
