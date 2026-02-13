@@ -20,6 +20,8 @@
 \usepackage{enumitem}
 \usepackage{multirow}  % For multirow table cells
 \usepackage{xcolor}    % For colored cells (if not already loaded)
+\usepackage{array}
+\usepackage{xparse}
 
 % Define Gantt chart symbols
 \newcommand{\GantP}{\cellcolor{blue!30}P}      % Planning
@@ -27,7 +29,17 @@
 \newcommand{\GantT}{\cellcolor{orange!30}T}    % Testing
 \newcommand{\GantY}{\cellcolor{red!30}Y}       % Deployment
 \newcommand{\GantC}{\cellcolor{gray!20}C}      % Continuous/Documentation
-
+\newcommand{\CampusName}{Central Campus of Technology}
+\newcommand{\CampusAddr}{Dharan - 14}
+\newcommand{\StudentName}{Rohan Khanal}
+\newcommand{\OrgName}{Genese Solution Pvt. Ltd}
+\newcommand{\OrgAddr}{Bakundol, Lalitpur, Nepal}
+\newcommand{\LogArrayStretch}{1.1}
+\newcommand{\LogColSep}{3pt}
+% ---------- Helper: one row ----------
+\NewDocumentCommand{\LogRow}{m m m m m}{%
+#1 & #2 & #3 & #4 & #5 \\ \hline
+}
 \usepackage[acronym]{glossaries}  % Load glossaries package
 \makeglossaries  % Prepares glossaries for use
 
@@ -132,4 +144,8 @@
 
 \newpage
 \input{sec/appendix.tex}
+
+\newpage
+\input{sec/dailyreport.tex}
+
 \end{document}
