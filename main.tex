@@ -41,25 +41,29 @@
 \NewDocumentCommand{\LogRow}{m m m m m}{%
 #1 & #2 & #3 & #4 & #5 \\ \hline
 }
-\usepackage[acronym]{glossaries}  % Load glossaries package
-\makeglossaries  % Prepares glossaries for use
+
+\usepackage[acronym,nonumberlist]{glossaries}
+\makenoidxglossaries
 
 % Define acronyms (abbreviations)
-\newacronym{cns}{CNS}{Central Nervous System}
-\newacronym{mri}{MRI}{Magnetic Resonance Imaging}
-\newacronym{cnn}{CNN}{Convolutional Neural Network}
-\newacronym{vgg16}{VGG16}{Visual Geometry Group 16-layer model}
-\newacronym{mern}{MERN}{MongoDB, Express.js, React.js, Node.js}
-\newacronym{json}{JSON}{JavaScript Object Notation}
-\newacronym{asr}{ASR}{Age-Standardized Rate}
-\newacronym{relu}{ReLU}{Rectified Linear Unit}
-\newacronym{ai}{AI}{Artificial Intelligence}
-\newacronym{hmac}{HMAC}{Hash-based Message Authentication Code}
-\newacronym{sha256}{SHA256}{Secure Hash Algorithm 256-bit}
-\newacronym{rsa}{RSA}{Rivest–Shamir–Adleman}
-\newacronym{jwt}{JWT}{JSON Web Token}
+\newacronym{aws}{AWS}{Amazon Web Services}
+\newacronym{cicd}{CI/CD}{Continuous Integration and Continuous Delivery}
+\newacronym{iac}{IaC}{Infrastructure as Code}
+\newacronym{iam}{IAM}{Identity and Access Management}
+\newacronym{rds}{RDS}{Relational Database Service}
+\newacronym{ec2}{EC2}{Elastic Compute Cloud}
+\newacronym{s3}{S3}{Simple Storage Service}
+\newacronym{waf}{WAF}{Web Application Firewall}
+\newacronym{ssm}{SSM}{Systems Manager}
+\newacronym{dkim}{DKIM}{DomainKeys Identified Mail}
+\newacronym{smtp}{SMTP}{Simple Mail Transfer Protocol}
+\newacronym{gump}{GUMP}{Genese Unified Mailing Platform}
+\newacronym{sam}{SAM}{Serverless Application Model}
+
 
 \begin{document}
+\glsaddall
+
 
 \input{sec/titlepage}
 \thispagestyle{empty} 

@@ -6,9 +6,9 @@
 \subsection{Introduction}
 In recent years, the software development industry has undergone a major transformation with the emergence of DevOps practices and Cloud Computing technologies. Traditional software development methodologies often separated development and operations teams, resulting in slow delivery cycles, frequent deployment failures, infrastructure inconsistencies, and limited scalability. To address these challenges, DevOps has emerged as a cultural and technical movement that integrates development (Dev) and operations (Ops) into a unified workflow, promoting automation, collaboration, continuous integration, and continuous delivery. \cite{HARNESSING_CLOUD_INFRASTRUCTURE}
 
-DevOps is not merely a toolset but a philosophy that emphasizes automation, monitoring, version control, infrastructure as code (IaC), containerization, and cloud-based deployment. Combined with cloud computing platforms such as Amazon Web Services (AWS), DevOps enables organizations to build scalable, resilient, and highly available systems with faster release cycles and improved reliability. \cite{CI/CD}
+DevOps is not merely a toolset but a philosophy that emphasizes automation, monitoring, version control, \gls{iac}, containerization, and cloud-based deployment. Combined with cloud computing platforms such as \gls{aws}, DevOps enables organizations to build scalable, resilient, and highly available systems with faster release cycles and improved reliability. \cite{CI/CD}
 
-During my internship at Genese Solution Pvt. Ltd., Lalitpur, Nepal, I worked as a Cloud and DevOps Engineering Intern, where I gained hands-on experience in implementing DevOps practices within real-world production environments. The organization specializes in cloud-based infrastructure solutions, automation, and scalable system design. Throughout the internship period, I was actively involved in designing and implementing CI/CD pipelines, managing AWS resources, automating deployment processes using AWS SAM (Serverless Application Model), configuring IAM roles and policies, and working with services such as AWS Lambda, CodeBuild, CodePipeline, S3, CloudFormation, EventBridge, and CloudWatch.
+During my internship at Genese Solution Pvt. Ltd., Lalitpur, Nepal, I worked as a Cloud and DevOps Engineering Intern, where I gained hands-on experience in implementing DevOps practices within real-world production environments. The organization specializes in cloud-based infrastructure solutions, automation, and scalable system design. Throughout the internship period, I was actively involved in designing and implementing \gls{cicd} pipelines, managing AWS resources, automating deployment processes using AWS \gls{sam}, configuring \gls{iam} roles and policies, and working with services such as AWS Lambda, CodeBuild, CodePipeline, S3, CloudFormation, EventBridge, and CloudWatch.
 
 One of the major projects I contributed to involved a serverless architecture using AWS Lambda in a monorepo structure, where multiple independent Lambda functions shared common layers. The deployment was automated through CodePipeline and CodeBuild, enabling efficient version control and environment-based deployment (Development, Staging, Production). This experience provided deep practical exposure to infrastructure automation, cloud security, monitoring, and performance optimization.
 
@@ -36,38 +36,11 @@ Organizations aiming to build cloud-based applications often struggle with:
   \item Ensuring security and least-privilege access using IAM policies
 \end{itemize}
 
-Specifically, in serverless monorepo architectures, challenges arise in:
-\begin{itemize}
-  \item Handling shared dependencies (common layers)
-  \item Triggering selective deployments
-  \item Avoiding unnecessary rebuilds
-  \item Maintaining version control for multiple Lambda functions
-  \item Ensuring proper role-based access control
-  \item Managing S3 artifacts and CloudFormation packaging
-\end{itemize}
-
-Therefore, there was a need to design and implement a structured DevOps workflow that would:
-\begin{itemize}
-  \item Automate build, package, and deployment processes
-  \item Enable scalable serverless architecture
-  \item Reduce manual intervention
-  \item Improve deployment reliability
-  \item Enforce security best practices
-  \item Optimize cloud resource usage
-\end{itemize}
-
-% \subsection{Objectives}
-%  To design and implement a convolutional neural network (\gls{cnn}) model, incorporating transfer learning with VGG16 to enhance accuracy, tailored for precise brain tumor detection and classification.
-
 \subsection{Objectives}
 To understand and implement DevOps practices using cloud technologies in a production-level environment.
-% \begin{itemize}
-%     \item To design and implement a convolutional neural network (\gls{cnn}) model.
-%     \item To incorporate transfer learning with VGG16 to enhance accuracy for precise brain tumor detection and classification.
-% \end{itemize}
 
 \subsection{Scope and Limitation}
-\textbf{Scope}
+\textbf{Scope}\\
 The scope of this internship primarily covered:
 \begin{itemize}
   \item Implementation of DevOps practices in cloud-based environments
@@ -93,7 +66,7 @@ Furthermore, the internship experience is highly relevant to academic subjects s
   \item Computer Networks
 \end{itemize}
 
-\textbf{Limitation}
+\textbf{Limitation}\\
 Despite the extensive exposure, certain limitations were present:
 \begin{itemize}
   \item Limited access to confidential production data
@@ -113,22 +86,13 @@ This internship report is organized into multiple chapters to systematically pre
   \item \textbf{Chapter 1: Introduction} \\
   Provides background, objectives, problem statement, scope, and structure of the report.
 
-  \item \textbf{Chapter 2: Organization Overview} \\
-  Describes Genese Solution Pvt.\ Ltd., its services, working environment, and organizational structure.
+  \item \textbf{Chapter 2: Organization Details and Literature Review} \\
+  Describes Genese Solution Pvt.\ Ltd., its services, working environment, and organizational structure and covers theoretical concepts related to DevOps.
 
-  \item \textbf{Chapter 3: Literature Review / Background Study} \\
-  Covers theoretical concepts related to DevOps, CI/CD, Cloud Computing, AWS services, Infrastructure as Code, and Serverless Architecture.
+  \item \textbf{Chapter 3: Internship Activities } \\
+ Internship Activities covers the practical tasks, technical projects, responsibilities, and hands-on experiences undertaken during the internship period.
 
-  \item \textbf{Chapter 4: Methodology and Tools Used} \\
-  Explains the technologies, tools, and workflow implemented during the internship.
-
-  \item \textbf{Chapter 5: System Design and Implementation} \\
-  Describes the architecture, CI/CD pipelines, serverless deployment structure, IAM configuration, and automation strategies.
-
-  \item \textbf{Chapter 6: Results and Discussion} \\
-  Analyzes implementation outcomes, performance improvements, challenges faced, and solutions applied.
-
-  \item \textbf{Chapter 7: Conclusion and Future Recommendations} \\
+  \item \textbf{Chapter 4: Conclusion and Future Recommendations} \\
   Summarizes key learning outcomes and suggests possible improvements and future enhancements.
 
   \item \textbf{Appendices} \\
