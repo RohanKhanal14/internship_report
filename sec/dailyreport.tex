@@ -51,10 +51,30 @@
 
 \noindent
 \begin{tabularx}{\textwidth}{@{}X X@{}}
-\textbf{Student Signature:} \hrulefill & \textbf{Date:} \hrulefill \\[0.8cm]
-\textbf{Mentor’s Signature:} \hrulefill & \textbf{Date:} \hrulefill \\[0.8cm]
-\textbf{Supervisor’s Signature:} \hrulefill & \textbf{Date:} \hrulefill \\
+
+\textbf{Student's Signature:} 
+\IfFileExists{Images/student-sign.png}
+{\includegraphics[height=0.7cm]{Images/student-sign.png}}
+{\hrulefill}
+&
+\textbf{Date:} 2082-10-16 \\[0.3cm]
+
+\textbf{Mentor’s Signature:}
+\IfFileExists{Images/mentor-sign.png}
+{\includegraphics[height=1.2cm]{Images/mentor-sign.png}}
+{\hrulefill}
+&
+\textbf{Date:} 2082-10-16 \\[0.7cm]
+
+\textbf{Supervisor’s Signature:}
+\IfFileExists{Images/supervisor-sign.png}
+{\includegraphics[height=1.2cm]{Images/supervisor-sign.png}}
+{\hrulefill}
+&
+\textbf{Date:} \hrulefill \\
+
 \end{tabularx}
+
 }
 
 % ========= HOW TO USE (ONLY edit the rows + summary/plan) =========
@@ -125,58 +145,58 @@
   \LogRow{1}{2082-09-07}{9}{279}{Researched AWS WAF capabilities and deployment options.}
   \LogRow{2}{2082-09-08}{9}{288}{Studied AWS Managed Rule Groups and best practices.}
   \LogRow{3}{2082-09-09}{9}{297}{Evaluated SQL injection protection approach.}
-  \LogRow{4}{2082-09-10}{9}{306}{Christmas Leave - No work done.}
-  \LogRow{5}{2082-09-11}{9}{315}{Reviewed rate limiting and documented recommendations.}
-  \LogRow{6}{2082-09-12}{Holiday}{315}{Weekend}
-  \LogRow{7}{2082-09-13}{Holiday}{315}{Weekend}
-}{Researched AWS WAF features for securing GUMP Now against web threats.}{Design automated CI/CD pipeline for Lambda monorepo.}{45}
+  \LogRow{4}{2082-09-10}{-}{297}{Christmas Leave - No work done.}
+  \LogRow{5}{2082-09-11}{9}{306}{Reviewed rate limiting and documented recommendations.}
+  \LogRow{6}{2082-09-12}{Holiday}{306}{Weekend}
+  \LogRow{7}{2082-09-13}{Holiday}{306}{Weekend}
+}{Researched AWS WAF features for securing GUMP Now against web threats.}{Design automated CI/CD pipeline for Lambda monorepo.}{36}
 
 \WeeklyLog{8}{
-  \LogRow{1}{2082-09-14}{9}{324}{Designed automated Lambda monorepo CI/CD architecture.}
-  \LogRow{2}{2082-09-15}{9}{333}{Created custom trigger Lambda for selective deployment.}
-  \LogRow{3}{2082-09-16}{9}{342}{Designed SAM build workflow and repository structure.}
-  \LogRow{4}{2082-09-17}{9}{351}{New Year Leave - No work done.}
-  \LogRow{5}{2082-09-18}{9}{360}{Planned environment-based deployment strategy.}
-  \LogRow{6}{2082-09-19}{Holiday}{360}{Weekend}
-  \LogRow{7}{2082-09-20}{Holiday}{360}{Weekend}
-}{Designed CI/CD pipeline architecture for Lambda monorepo automation.}{Implement and test pipeline deployment workflow.}{45}
+  \LogRow{1}{2082-09-14}{9}{315}{Designed automated Lambda monorepo CI/CD architecture.}
+  \LogRow{2}{2082-09-15}{9}{324}{Created custom trigger Lambda for selective deployment.}
+  \LogRow{3}{2082-09-16}{9}{333}{Designed SAM build workflow and repository structure.}
+  \LogRow{4}{2082-09-17}{-}{333}{New Year Leave - No work done.}
+  \LogRow{5}{2082-09-18}{9}{342}{Planned environment-based deployment strategy.}
+  \LogRow{6}{2082-09-19}{Holiday}{342}{Weekend}
+  \LogRow{7}{2082-09-20}{Holiday}{342}{Weekend}
+}{Designed CI/CD pipeline architecture for Lambda monorepo automation.}{Implement and test pipeline deployment workflow.}{36}
 
 \WeeklyLog{9}{
-  \LogRow{1}{2082-09-21}{9}{369}{Implemented CodeBuild pipeline stages.}
-  \LogRow{2}{2082-09-22}{9}{378}{Integrated SAM build and packaging process.}
-  \LogRow{3}{2082-09-23}{9}{387}{Integrated SAM deploy process.}
-  \LogRow{4}{2082-09-24}{9}{396}{Debugged deployment configuration issues.}
-  \LogRow{5}{2082-09-25}{9}{405}{Validated staging and production deployments.}
-  \LogRow{6}{2082-09-26}{Holiday}{405}{Weekend}
-  \LogRow{7}{2082-09-27}{Holiday}{405}{Weekend}
+  \LogRow{1}{2082-09-21}{9}{351}{Implemented CodeBuild pipeline stages.}
+  \LogRow{2}{2082-09-22}{9}{360}{Integrated SAM build and packaging process.}
+  \LogRow{3}{2082-09-23}{9}{369}{Integrated SAM deploy process.}
+  \LogRow{4}{2082-09-24}{9}{378}{Debugged deployment configuration issues.}
+  \LogRow{5}{2082-09-25}{9}{387}{Validated staging and production deployments.}
+  \LogRow{6}{2082-09-26}{Holiday}{387}{Weekend}
+  \LogRow{7}{2082-09-27}{Holiday}{387}{Weekend}
 }{Successfully implemented and tested automated CI/CD pipeline.}{Explore SMTP server and email handling mechanisms.}{45}
 
-\WeeklyLog{09}{
-  \LogRow{1}{2082-09-28}{9}{414}{Researched SMTP protocol and email flow basics.}
-  \LogRow{2}{2082-09-29}{9}{423}{Built SMTP server proof of concept using Node.js.}
-  \LogRow{3}{2082-09-30}{9}{432}{Tested mail flow and analyzed server behavior.}
-  \LogRow{4}{2082-10-01}{9}{441}{Analyzed email headers and logs.}
-  \LogRow{5}{2082-10-02}{9}{450}{Documented findings and implementation insights.}
-  \LogRow{6}{2082-10-03}{Holiday}{450}{Weekend}
-  \LogRow{7}{2082-10-04}{Holiday}{450}{Weekend}
+\WeeklyLog{10}{
+  \LogRow{1}{2082-09-28}{9}{396}{Researched SMTP protocol and email flow basics.}
+  \LogRow{2}{2082-09-29}{9}{405}{Built SMTP server proof of concept using Node.js.}
+  \LogRow{3}{2082-09-30}{9}{414}{Tested mail flow and analyzed server behavior.}
+  \LogRow{4}{2082-10-01}{9}{423}{Analyzed email headers and logs.}
+  \LogRow{5}{2082-10-02}{9}{432}{Documented findings and implementation insights.}
+  \LogRow{6}{2082-10-03}{Holiday}{432}{Weekend}
+  \LogRow{7}{2082-10-04}{Holiday}{432}{Weekend}
 }{Conducted SMTP proof of concept and analyzed email handling workflow.}{Perform functional and usability testing of website.}{45}
 
 \WeeklyLog{11}{
-  \LogRow{1}{2082-10-05}{9}{459}{Performed functional testing of GUMP Now website.}
-  \LogRow{2}{2082-10-06}{9}{468}{Conducted usability evaluation.}
-  \LogRow{3}{2082-10-07}{9}{477}{Identified UI bugs and issues.}
-  \LogRow{4}{2082-10-08}{9}{486}{Verified fixes and improvements.}
-  \LogRow{5}{2082-10-09}{9}{495}{Prepared QA documentation.}
-  \LogRow{6}{2082-10-10}{Holiday}{495}{Weekend}
-  \LogRow{7}{2082-10-11}{Holiday}{495}{Weekend}
+  \LogRow{1}{2082-10-05}{9}{441}{Performed functional testing of GUMP Now website.}
+  \LogRow{2}{2082-10-06}{9}{450}{Conducted usability evaluation.}
+  \LogRow{3}{2082-10-07}{9}{459}{Identified UI bugs and issues.}
+  \LogRow{4}{2082-10-08}{9}{468}{Verified fixes and improvements.}
+  \LogRow{5}{2082-10-09}{9}{477}{Prepared QA documentation.}
+  \LogRow{6}{2082-10-10}{Holiday}{477}{Weekend}
+  \LogRow{7}{2082-10-11}{Holiday}{477}{Weekend}
 }{Performed functional and usability testing, identified UI issues, and validated fixes.}{Implement final production improvements and complete internship documentation.}{45}
 
 \WeeklyLog{12}{
-  \LogRow{1}{2082-10-12}{9}{504}{Fixed Outlook invitation email rendering issue.}
-  \LogRow{2}{2082-10-13}{9}{513}{Implemented DKIM CSV download feature.}
-  \LogRow{3}{2082-10-14}{9}{522}{Deployed updates to staging environment.}
-  \LogRow{4}{2082-10-15}{9}{531}{Deployed updates to production environment.}
-  \LogRow{5}{2082-10-16}{9}{540}{Final documentation and internship wrap-up.}
-  \LogRow{6}{2082-10-17}{Holiday}{540}{Weekend}
-  \LogRow{7}{2082-10-18}{Holiday}{540}{Weekend}
+  \LogRow{1}{2082-10-12}{9}{486}{Fixed Outlook invitation email rendering issue.}
+  \LogRow{2}{2082-10-13}{9}{495}{Implemented DKIM CSV download feature.}
+  \LogRow{3}{2082-10-14}{9}{504}{Deployed updates to staging environment.}
+  \LogRow{4}{2082-10-15}{9}{513}{Deployed updates to production environment.}
+  \LogRow{5}{2082-10-16}{9}{522}{Final documentation and internship wrap-up.}
+  \LogRow{6}{2082-10-17}{Holiday}{522}{Weekend}
+  \LogRow{7}{2082-10-18}{Holiday}{522}{Weekend}
 }{Completed production improvements including Outlook email fix and DKIM CSV feature deployment. Finalized documentation and handover.}{Internship completed.}{45}

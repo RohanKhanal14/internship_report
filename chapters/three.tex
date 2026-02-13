@@ -3,165 +3,140 @@
 \addcontentsline{toc}{section}{CHAPTER 3: Internship Activities}\label{3}
 
 \subsection{Roles and Responsibilities}
-\begin{enumerate}[label=\roman*.]
-    \item \textbf{Functional Requirements}
-          \begin{center}
-              \begin{figure}[H]
-                  \centering
-                  \includegraphics[width=0.85\linewidth]{Images/usecase.pdf}
-                  \caption{Use Case Diagram}
-                  \label{fig:UseCaseDiagram}
-              \end{figure}
-          \end{center}
-          The use case diagram presents the fundamental interactions between system actors and core functionalities of the application. The primary actor, Patient/User, represents individuals seeking brain tumor analysis services and can perform essential activities including account registration, system login, brain scan upload, image analysis, result viewing, report generation, profile management, analysis history review, and system logout. The diagram establishes key relationships through include and extend dependencies, where uploading brain scans necessarily includes the analysis process, viewing results can optionally extend to report generation, and successful login enables access to upload functionality.
 
-    \item \textbf{Non-Functional Requirements}
-          \begin{itemize}
-              \item \textbf{Performance:} The system should process MRI images and provide classification results within 10--15 seconds per image, ensuring minimal waiting time for medical practitioners during diagnosis.
+During my internship at \textbf{Genese Solution Pvt.\ Ltd.}, I performed the following roles and responsibilities in the Cloud \& DevOps Engineering Department:
 
-              \item \textbf{Accuracy:} The brain tumor classification model must maintain a minimum accuracy of 95\% on test datasets, with precision and recall rates above 90\% for each tumor type (glioma, meningioma, pituitary).
+\begin{itemize}
 
-              \item \textbf{Usability:} The user interface must be intuitive and easy to navigate for medical practitioners with varying levels of technical expertise, requiring minimal training for effective system usage.
+    \item Assisted in designing and implementing \textbf{CI/CD pipelines} using AWS CodePipeline and AWS CodeBuild.
+    
+    \item Automated build, packaging, and deployment processes for serverless applications.
+    
+    \item Worked with \textbf{AWS SAM (Serverless Application Model)} for building and deploying Lambda-based applications.
+    
+    \item Developed and modified \textbf{AWS CloudFormation templates} to provision infrastructure using Infrastructure as Code (IaC).
+    
+    \item Managed deployment artifacts in \textbf{Amazon S3}, including packaging and version control of application builds.
+    
+    \item Configured and maintained \textbf{AWS IAM roles and policies} following the principle of least privilege.
+    
+    \item Assisted in creating and managing \textbf{serverless architectures using AWS Lambda} in a monorepo structure.
+    
+    \item Handled shared Lambda layers, versioning, and dependency management.
+    
+    \item Monitored application logs and system performance using \textbf{Amazon CloudWatch}.
+    
+    \item Identified and troubleshot build failures, deployment errors, and configuration issues.
+    
+    \item Supported multi-environment deployments (Development, Staging, Production).
+    
+    \item Participated in reviewing infrastructure changes and deployment workflows.
+    
+    \item Collaborated with development teams to improve automation and deployment efficiency.
+    
+    \item Maintained technical documentation related to CI/CD pipelines, IAM configuration, and deployment procedures.
+    
+    \item Followed Agile methodologies and participated in team meetings and progress discussions.
+    
+    \item Ensured adherence to cloud security best practices and operational standards.
 
-              \item \textbf{Reliability:} The system should maintain 99.5\% uptime with robust error handling and recovery mechanisms to ensure continuous availability for critical medical applications.
+\end{itemize}
 
-              \item \textbf{Security:} Patient data and medical images must be encrypted during transmission and storage, with secure user authentication to comply with healthcare data protection regulations.
-
-              \item \textbf{Compatibility:} The web-based interface must be compatible with major browsers (Chrome, Firefox, Safari, Edge) and responsive across desktop, tablet, and mobile devices.
-
-              \item \textbf{Maintainability:} The codebase should follow clean coding practices and modular design principles to facilitate future updates, model improvements, and feature additions.
-
-              \item \textbf{Data Integrity:} The system must ensure data consistency and prevent corruption during image upload, processing, and storage operations with appropriate backup and recovery mechanisms.
-
-              \item \textbf{Extensibility:} The system architecture should support future enhancements such as additional imaging modalities (CT scans, X-rays), new tumor types, and integration with existing hospital information systems.
-          \end{itemize}
-
-\end{enumerate}
 \subsection{Weekly log}
-\begin{enumerate}[label=\roman*.]
-    \item \textbf{Technical} \\
-          The system demonstrates strong technical viability through proven technology integration. The architecture combines React/TypeScript frontend with Node.js/Express backend, providing robust scalability for medical applications. TensorFlow/Keras implementation ensures reliable deep learning capabilities with 90\% accuracy in brain tumor classification. Docker containerization enables consistent deployment across environments, while MongoDB offers flexible medical data storage. JWT authentication and bcrypt encryption meet healthcare security standards. The system supports cross-platform compatibility and future DICOM integration, confirming technical robustness and extensibility for medical imaging workflows.
 
-    \item \textbf{Operational} \\
-          The system aligns effectively with existing healthcare workflows and user requirements. The intuitive web-based interface requires minimal training for medical professionals, supporting multiple user roles including patients, doctors, and administrators. Automated analysis reduces interpretation time while maintaining human oversight through confidence scoring. The system integrates seamlessly with existing radiology workflows and generates comprehensive PDF reports for documentation. Cloud deployment supports telemedicine scenarios, while flexible architecture accommodates both individual practitioners and institutional deployments across various healthcare settings.
-    \item \textbf{Economic} \\
-          The project demonstrates favorable cost-benefit ratios through open-source technology utilization, eliminating expensive licensing fees. Development costs remain manageable with estimated ROI within 18--24 months based on subscription models and pay-per-analysis pricing. The system addresses significant market demand for affordable medical imaging tools, particularly in resource-limited settings. Operational costs scale proportionally with adoption, while revenue potential exists through institutional subscriptions and premium features. Long-term sustainability benefits from cloud scaling and automated operations reducing maintenance overhead.
+\begin{table}[h!]
+    \centering
+    \caption{Weekly log of activities performed during the internship.}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|p{13cm}|}
+    
+\hline
+\textbf{Week} & \textbf{Activity Performed} \\
+\hline
 
-    \item \textbf{Schedule}
-          The four-month development timeline from Jestha through Bhadra provides realistic project completion within allocated resources. Modular architecture enables parallel development streams, while agile methodology ensures continuous progress monitoring. The schedule accommodates comprehensive testing phases and risk mitigation strategies with adequate buffer time for unforeseen challenges. Critical milestones include system design completion, core functionality implementation, thorough testing, and final deployment preparation, ensuring successful delivery within the specified timeframe.
-        %   \begin{figure}[H]
-        %       \centering
-        %       \includegraphics[width=1\linewidth]{Images/gantt.png}
-        %       \caption{Sample Gantt Chart demonstrating schedule feasibility}
-        %       \label{fig:gantt}
-        %   \end{figure}
+Week 1 & Project onboarding and AWS architecture review of GUMP Now (Lambda, RDS, EC2, CloudWatch, CI/CD). \\
+\hline
 
-        \begin{table}[h!]
-\centering
-\footnotesize
-\setlength{\tabcolsep}{2pt}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}l*{16}{c}@{}}
-\toprule
-\multirow{2}{*}{\textbf{Task}} &
-\multicolumn{4}{c}{\textbf{Jestha}} &
-\multicolumn{4}{c}{\textbf{Ashar}} &
-\multicolumn{4}{c}{\textbf{Shawarn}} &
-\multicolumn{4}{c}{\textbf{Bhadra}} \\
-\cmidrule(lr){2-5}\cmidrule(lr){6-9}\cmidrule(lr){10-13}\cmidrule(lr){14-17}
- & W1 & W2 & W3 & W4 & W1 & W2 & W3 & W4 & W1 & W2 & W3 & W4 & W1 & W2 & W3 & W4 \\
-\midrule
-Requirement Analysis              & \GantP  & \GantP  &     &     &     &     &     &     &     &     &     &     &     &     &     &     \\
-Planning                          &     & \GantP  & \GantP  &     &     &     &     &     &     &     &     &     &     &     &     &     \\
-Design                            &     &     & \GantP  & \GantP  & \GantP  & \GantP  &     &     &     &     &     &     &     &     &     &     \\
-\addlinespace[2pt]
-Iteration 1 — Dev                 &     &     &     &     & \GantD  & \GantD  & \GantD  &     &     &     &     &     &     &     &     &     \\
-Iteration 1 — Test                &     &     &     &     &     &     &     & \GantT  &     &     &     &     &     &     &     &     \\
-\addlinespace[2pt]
-Iteration 2 — Dev                 &     &     &     &     &     &     &     &     & \GantD  & \GantD  & \GantD  &     &     &     &     &     \\
-Iteration 2 — Test                &     &     &     &     &     &     &     &     &     &     & \GantT  &     &     &     &     &     \\
-\addlinespace[2pt]
-Iteration 3 — Dev                 &     &     &     &     &     &     &     &     &     &     & \GantD  & \GantD  & \GantD  &     &     &     \\
-Iteration 3 — Test                &     &     &     &     &     &     &     &     &     &     &     &     & \GantT  &     &     &     \\
-\addlinespace[2pt]
-Iteration 4 — Dev                 &     &     &     &     &     &     &     &     &     &     &     &     & \GantD  & \GantD  & \GantD  &     \\
-Iteration 4 — Test                &     &     &     &     &     &     &     &     &     &     &     &     &     &     & \GantT  &     \\
-\addlinespace[2pt]
-Deployment                        &     &     &     &     &     &     &     &     &     &     &     &     &     &     & \GantY  & \GantY  \\
-Documentation (ongoing)           & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  & \GantC  \\
-\bottomrule
-\end{tabular}%
-}
-\caption{Gantt-style weekly schedule following iterative development. Shaded cells indicate active work.}
+Week 2 & Research on CloudWatch Synthetics canaries for availability, latency, and user-journey monitoring. \\
+\hline
+
+Week 3 & Design of CloudWatch on-call support dashboards for staging and production environments. \\
+\hline
+
+Week 4 & Implementation of CloudWatch dashboards and monitoring metrics for operational visibility. \\
+\hline
+
+Week 5 & Implementation of IAM-based authentication for RDS in a staging environment. \\
+\hline
+
+Week 6 & Research and execution of AWS SSM Patch Manager to patch all EC2 instances in staging. \\
+\hline
+
+Week 7 & Research on AWS WAF capabilities including managed rules and web attack mitigation strategies. \\
+\hline
+
+Week 8 & Design of automated CI/CD pipeline for Lambda monorepo using AWS SAM and custom trigger Lambda. \\
+\hline
+
+Week 9 & Implementation of automated Lambda monorepo pipeline with CodeBuild, SAM build, package, and deploy. \\
+\hline
+
+Week 10 & SMTP server proof of concept using Node.js \texttt{smtp-server} package for mail flow analysis. \\
+\hline
+
+Week 11 & Functional and usability testing of the official GUMP Now website. \\
+\hline
+
+Week 12 & Production improvements: Outlook invitation email fix and DKIM CSV download feature deployment to staging and production. \\
+\hline
+
+\end{tabular}
 \end{table}
-\end{enumerate}
 
 \subsection{Description of the Project Involved During Internship}
-The system is analyzed using the Object-Oriented Approach, which includes three
-aspects. Object Modelling with Class and Object Diagrams shows the static
-structure of the system. Dynamic Modelling with State and Sequence Diagrams
-explains object interactions and state changes. Process Modelling with Activity
-Diagrams illustrates the workflow and control flow of operations.
-\begin{enumerate}[label=\roman*.]
-    \item \textbf{Class Diagram}
-          \begin{center}
-              \begin{figure}[H]
-                  \centering
-                  \includegraphics[width=0.4\linewidth]{Images/Highlevel/class.pdf}
-                  \caption{Class Diagram}
-                  \label{fig:ClassDiagram}
-              \end{figure}
-          \end{center}
-          The class diagram presents the fundamental building blocks of the brain tumor detection system. The User class serves as the central entity representing application users, containing basic authentication and profile information along with methods for login, registration, and profile updates. The Result class captures the outcomes of brain tumor analyses, storing prediction results, confidence scores, and timestamps while providing methods for image analysis and report generation. The MLModel class abstracts the machine learning functionality, encapsulating the model path and class labels with methods for image prediction and preprocessing. The AuthService class handles security operations including token generation, verification, and password hashing. The relationships show that users can have multiple analysis results, results utilize the ML model for predictions, and users interact with the authentication service for security purposes.
 
+The \textbf{Genese Unified Mailing Platform (GUMP)} is an enterprise-grade cloud-based mailing solution developed by \textbf{Genese Solution Pvt.\ Ltd.} to streamline and centralize email communication processes for organizations. The platform is designed to handle high-volume email delivery requirements, including transactional emails, notification systems, marketing campaigns, and automated communication workflows. GUMP provides a unified interface for managing email templates, user segmentation, scheduling, tracking, and reporting, ensuring reliable and efficient communication between organizations and their customers. \cite{genese_gump_platform}
 
+During my internship, I worked on multiple technical projects related to the \textbf{GUMP Now} platform, primarily focusing on cloud infrastructure, security enhancement, monitoring, automation, and operational support. One of the key contributions involved designing and implementing cloud monitoring and observability solutions using \textbf{AWS CloudWatch}, including dashboards and synthetic monitoring for improved availability tracking and proactive issue detection in staging and production environments.
 
-    \item \textbf{Object Diagram}
-          \begin{center}
-              \begin{figure}[H]
-                  \centering
-                  \includegraphics[width=0.60\linewidth]{Images/Highlevel/object.pdf}
-                  \caption{Object Diagram}
-                  \label{fig:ObjectDiagram}
-              \end{figure}
-          \end{center}
-          This object diagram illustrates a specific runtime scenario where a user named John has performed brain tumor analyses. The diagram shows concrete instances of the classes, with User object ``12345'' representing John's account information, connected to two Result objects showing actual analysis outcomes -- one detecting a Glioma tumor with 95\% confidence and another showing a Normal scan with 88\% confidence. Both results are linked to the same MLModel instance that has successfully loaded the Keras model file. This snapshot demonstrates how the system maintains relationships between users and their analysis history while sharing the ML model instance across multiple predictions.
+I also contributed to cloud security improvements by implementing \textbf{IAM-based authentication for Amazon RDS} and strengthening system security through patch management of EC2 instances using \textbf{AWS SSM Patch Manager}. In addition, I designed and implemented an automated \textbf{CI/CD pipeline} for a Lambda monorepo using \textbf{AWS SAM} and a custom trigger Lambda function, enabling efficient and selective serverless deployments.
 
-          \newpage
-    \item \textbf{State Diagram}
-          \begin{center}
-              \begin{figure}[H]
-                  \centering
-                  \includegraphics[width=0.35\linewidth]{Images/Highlevel/state.pdf}
-                  \caption{State Diagram}
-                  \label{fig:StateDiagram}
-              \end{figure}
-          \end{center}
-          The state diagram traces the user journey through the application's main workflow states. Users begin in an unauthenticated state and transition to authenticated status through successful login or registration. Once authenticated, users can navigate to image upload functionality, where they submit brain scan images for analysis. The system then moves to a processing state where the ML model analyzes the uploaded image. Upon completion, users reach the result display state where they can view their analysis outcomes. From this state, users can either initiate new analyses by returning to image upload or generate detailed PDF reports. The diagram also shows the logout transition that returns users to the unauthenticated state, completing the application lifecycle. This workflow represents the essential data flow from image submission to result presentation.
+Furthermore, I supported email infrastructure and application-level enhancements, including an SMTP server proof of concept, resolving Outlook email rendering issues, implementing a DKIM CSV download feature, conducting website testing, and supporting both staging and production environments. These activities collectively aimed to enhance the reliability, security, and operational efficiency of the GUMP platform.
 
-
-    \item \textbf{Sequence Diagram}
-          \begin{center}
-              \begin{figure}[H]
-                  \centering
-                  \includegraphics[width=0.9\linewidth]{Images/Highlevel/sequence.pdf}
-                  \caption{Sequence Diagram}
-                  \label{fig:SequenceDiagram}
-              \end{figure}
-          \end{center}
-          This sequence diagram depicts the core interaction flow for brain tumor analysis. The process begins when a user uploads a brain scan image through the frontend interface. The frontend forwards this request to the backend server, which first saves the uploaded image to the designated uploads directory. The backend then invokes the ML model service to analyze the saved image, receiving prediction results including tumor classification and confidence scores. These results are subsequently stored in the database for future reference and user history. The backend returns the analysis results to the frontend, which presents them to the user in a comprehensible format. This workflow represents the essential data flow from image submission to result presentation.
-
-
-    \item \textbf{Activity Diagram} \\
-          The activity diagram outlines the decision-based workflow of the application. The process starts with authentication verification, directing unauthenticated users through the login process before proceeding. Once authenticated, users can upload images, which undergo validation to ensure they meet the system requirements for format and size. Valid images proceed to ML model processing, where the deep learning algorithm analyzes the brain scan for tumor detection. Successful analysis results are saved to the database and displayed to users. The workflow includes an optional branch for PDF report generation, allowing users to create downloadable documentation of their analysis results. Error handling is integrated throughout, redirecting users to appropriate error states when validation or processing fails.
-          \begin{center}
-              \begin{figure}[H]
-                  \centering
-                  \includegraphics[width=0.70\linewidth]{Images/Highlevel/activity.pdf}
-                  \caption{Activity Diagram}
-                  \label{fig:ActivityDiagram}
-              \end{figure}
-          \end{center}
-\end{enumerate}
 
 \subsection{Activities Performed}
+
+\begin{itemize}
+
+\item \textbf{Cloud Monitoring and Observability:}  
+Researched and configured AWS CloudWatch features, including custom dashboards and performance metrics for staging and production environments. Evaluated CloudWatch Synthetics canaries to monitor application availability, response time, and end-to-end user journeys, supporting proactive incident detection and on-call operations.
+
+\item \textbf{RDS IAM Authentication Implementation:}  
+Implemented IAM-based authentication for Amazon RDS in the Gumpnow staging environment. Configured IAM roles and policies, updated database connection logic, and validated secure database access without static credentials.
+
+\item \textbf{On-Call Support Dashboards:}  
+Designed and deployed CloudWatch dashboards aggregating key service metrics such as health status, error rates, and alarms. Validated dashboards in both staging and production environments.
+
+\item \textbf{Website and Application Testing:}  
+Conducted functional and usability testing of the official GUMP Now website to ensure correct behavior, identify defects, and validate fixes before and after deployments.
+
+\item \textbf{SMTP Server Proof of Concept:}  
+Developed a proof-of-concept SMTP server using the Node.js \texttt{smtp-server} package to analyze email handling, message flow, and integration mechanisms within the email infrastructure.
+
+\item \textbf{AWS WAF Research:}  
+Researched AWS Web Application Firewall (WAF) capabilities, including managed rule groups and custom rules, to evaluate protection mechanisms against SQL injection, cross-site scripting (XSS), and other web vulnerabilities.
+
+\item \textbf{Patch Management Using AWS SSM:}  
+Patched all EC2 instances in the Gumpnow staging environment using AWS Systems Manager Patch Manager. Verified compliance, monitored execution, and ensured system stability after patching.
+
+\item \textbf{Email Rendering and Deliverability Fixes:}  
+Investigated and resolved an issue where invitation email buttons were not displayed correctly in Microsoft Outlook. Improved HTML/CSS compatibility and validated rendering across email clients.
+
+\item \textbf{DKIM Feature Enhancement:}  
+Implemented a feature in the \texttt{gumpnow-frontend-app} to enable downloading DKIM records in CSV format. Deployed and verified the feature in staging and production environments.
+
+\item \textbf{CI/CD Automation for Lambda Monorepo:}  
+Designed and implemented an automated CI/CD pipeline for a Lambda monorepo using AWS SAM. Developed a custom trigger Lambda function to detect code changes and selectively trigger deployments, improving efficiency and reducing unnecessary builds.
+
+\end{itemize}
+

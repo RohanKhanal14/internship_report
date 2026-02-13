@@ -4,80 +4,133 @@
 \setcounter{section}{1}
 
 \subsection{Introduction}
-Brain tumors are among the most lethal forms of cancer, contributing to high
-mortality and morbidity rates worldwide. Early and accurate detection plays a
-vital role in improving patient outcomes, as timely treatment significantly
-enhances survival rates. However, traditional methods of diagnosis, such as
-manual \gls{mri} analysis, prove to be time-consuming, laborious, and
-error-prone. In recent years, significant progression has been witnessed in the
-field of Artificial Intelligence, and deep learning, in particular, shows great
-promise in overcoming these limitations.~\cite{razzak2018}
+In recent years, the software development industry has undergone a major transformation with the emergence of DevOps practices and Cloud Computing technologies. Traditional software development methodologies often separated development and operations teams, resulting in slow delivery cycles, frequent deployment failures, infrastructure inconsistencies, and limited scalability. To address these challenges, DevOps has emerged as a cultural and technical movement that integrates development (Dev) and operations (Ops) into a unified workflow, promoting automation, collaboration, continuous integration, and continuous delivery. \cite{HARNESSING_CLOUD_INFRASTRUCTURE}
 
-In the field of intelligent automation and high accuracy for discriminating
-brain tumor presence from medical images, Convolutional Neural Networks, or
-\gls{cnn}s, demonstrate remarkable potential. This research discusses the brain
-tumor detection and classification problem. It provides an automated approach
-to identify the position, size, and shape of tumors through deep learning
-techniques applied to medical images. Numerous studies have been undertaken
-using machine learning and deep learning techniques for this purpose, with
-\gls{cnn}-based models consistently demonstrating some of the most effective
-results in medical image analysis.~\cite{ilic2023}
+DevOps is not merely a toolset but a philosophy that emphasizes automation, monitoring, version control, infrastructure as code (IaC), containerization, and cloud-based deployment. Combined with cloud computing platforms such as Amazon Web Services (AWS), DevOps enables organizations to build scalable, resilient, and highly available systems with faster release cycles and improved reliability. \cite{CI/CD}
+
+During my internship at Genese Solution Pvt. Ltd., Lalitpur, Nepal, I worked as a Cloud and DevOps Engineering Intern, where I gained hands-on experience in implementing DevOps practices within real-world production environments. The organization specializes in cloud-based infrastructure solutions, automation, and scalable system design. Throughout the internship period, I was actively involved in designing and implementing CI/CD pipelines, managing AWS resources, automating deployment processes using AWS SAM (Serverless Application Model), configuring IAM roles and policies, and working with services such as AWS Lambda, CodeBuild, CodePipeline, S3, CloudFormation, EventBridge, and CloudWatch.
+
+One of the major projects I contributed to involved a serverless architecture using AWS Lambda in a monorepo structure, where multiple independent Lambda functions shared common layers. The deployment was automated through CodePipeline and CodeBuild, enabling efficient version control and environment-based deployment (Development, Staging, Production). This experience provided deep practical exposure to infrastructure automation, cloud security, monitoring, and performance optimization.
+
+This internship bridged the gap between academic learning and industry practices. It enhanced my understanding of distributed systems, cloud-native architectures, DevOps lifecycle, security best practices, and automation techniques required for modern software delivery.
 
 \subsection{Problem Statement}
-Brain tumors requiring timely diagnosis for effective treatment and improved survival rates. Conventional diagnostic methods, primarily reliant on manual analysis of \gls{mri} scans by radiologists, are time-consuming, prone to human error, and often lead to inconsistent results, especially in early detection stages. The rising volume of medical imaging data further exacerbates this issue, putting additional strain on healthcare systems. There is a compelling need for an automated, accurate, and efficient system that can assist in detecting and classifying brain tumors to support medical professionals in making informed decisions.\cite{aksoy2025}
+In traditional software development environments, several critical challenges exist:
+\begin{itemize}
+  \item Manual deployment processes leading to human errors
+  \item Lack of standardized infrastructure configuration
+  \item Poor collaboration between development and operations teams
+  \item Inconsistent environments (development vs.\ production mismatch)
+  \item Slow release cycles
+  \item Difficulty in scaling applications
+  \item Limited monitoring and observability
+\end{itemize}
+
+Organizations aiming to build cloud-based applications often struggle with:
+\begin{itemize}
+  \item Automating deployments efficiently
+  \item Managing infrastructure securely
+  \item Maintaining environment consistency
+  \item Implementing continuous integration and continuous deployment (CI/CD)
+  \item Managing multiple microservices or serverless functions efficiently
+  \item Ensuring security and least-privilege access using IAM policies
+\end{itemize}
+
+Specifically, in serverless monorepo architectures, challenges arise in:
+\begin{itemize}
+  \item Handling shared dependencies (common layers)
+  \item Triggering selective deployments
+  \item Avoiding unnecessary rebuilds
+  \item Maintaining version control for multiple Lambda functions
+  \item Ensuring proper role-based access control
+  \item Managing S3 artifacts and CloudFormation packaging
+\end{itemize}
+
+Therefore, there was a need to design and implement a structured DevOps workflow that would:
+\begin{itemize}
+  \item Automate build, package, and deployment processes
+  \item Enable scalable serverless architecture
+  \item Reduce manual intervention
+  \item Improve deployment reliability
+  \item Enforce security best practices
+  \item Optimize cloud resource usage
+\end{itemize}
 
 % \subsection{Objectives}
 %  To design and implement a convolutional neural network (\gls{cnn}) model, incorporating transfer learning with VGG16 to enhance accuracy, tailored for precise brain tumor detection and classification.
 
 \subsection{Objectives}
-The main objectives of this project are as follows:
-\begin{itemize}
-    \item To design and implement a convolutional neural network (\gls{cnn}) model.
-    \item To incorporate transfer learning with VGG16 to enhance accuracy for precise brain tumor detection and classification.
-\end{itemize}
+To understand and implement DevOps practices using cloud technologies in a production-level environment.
+% \begin{itemize}
+%     \item To design and implement a convolutional neural network (\gls{cnn}) model.
+%     \item To incorporate transfer learning with VGG16 to enhance accuracy for precise brain tumor detection and classification.
+% \end{itemize}
 
 \subsection{Scope and Limitation}
-The scope of this research encompasses comprehensive preprocessing of medical
-images, systematic training of the \gls{cnn} model on various available
-datasets, and thorough evaluation of its performance using well-established
-metrics including accuracy, precision, recall, and F1-score. This research
-emphasizes the transformative role of artificial intelligence in reducing human
-error and accelerating diagnostic processes, thereby significantly improving
-patient outcomes and healthcare efficiency.
+\textbf{Scope}
+The scope of this internship primarily covered:
+\begin{itemize}
+  \item Implementation of DevOps practices in cloud-based environments
+  \item Serverless architecture design using AWS Lambda
+  \item CI/CD pipeline development
+  \item Infrastructure as Code using AWS SAM and CloudFormation
+  \item Cloud security configuration using IAM
+  \item S3 artifact management
+  \item Monitoring and logging setup
+  \item Automation of multi-environment deployments
+  \item Version control integration with Git repositories
+\end{itemize}
 
-However, this research acknowledges several important limitations. The accuracy
-and reliability of the system are inherently influenced by the quality,
-diversity, and representativeness of the dataset used for training the neural
-network. Given that the datasets employed in this research are limited to
-available \gls{mri} scans, the variability may not fully capture the complete
-spectrum of differences in tumor types, stages, or imaging conditions
-encountered in diverse clinical scenarios.
+The internship provided exposure to real-time production systems and enterprise-level deployment strategies. The practical implementation helped understand how scalable and reliable cloud architectures are built in modern organizations.
 
-Furthermore, this model is developed primarily for academic research purposes
-and experimental validation. It should not be considered as a replacement for
-professional medical judgment or clinical expertise. Additional considerations
-include hardware computational constraints, model generalization capabilities
-across different populations, and the complex ethical implications surrounding
-the use of \gls{ai} in critical medical decision-making processes. These
-considerations extend beyond the immediate scope of this study.
+Furthermore, the internship experience is highly relevant to academic subjects such as:
+\begin{itemize}
+  \item Distributed Systems
+  \item Cloud Computing
+  \item Operating Systems
+  \item Database Systems
+  \item Software Engineering
+  \item Computer Networks
+\end{itemize}
+
+\textbf{Limitation}
+Despite the extensive exposure, certain limitations were present:
+\begin{itemize}
+  \item Limited access to confidential production data
+  \item Restricted IAM permissions due to security policies
+  \item Time-bound internship duration (12 weeks)
+  \item Dependency on organizational infrastructure decisions
+  \item Limited exposure to on-premises DevOps environments
+  \item Focus primarily on AWS (not multi-cloud platforms)
+\end{itemize}
+
+Additionally, some enterprise-level configurations (e.g., advanced security compliance, cost governance strategies, and enterprise networking design) were outside the scope of the internship.
+
 
 \subsection{Report Organization}
-This research report is systematically organized into several comprehensive
-chapters that present the research methodology, implementation details, and
-findings in a logical progression. The structure is as follows:
-
+This internship report is organized into multiple chapters to systematically present the learning experience and technical contributions made during the internship.
 \begin{itemize}
+  \item \textbf{Chapter 1: Introduction} \\
+  Provides background, objectives, problem statement, scope, and structure of the report.
 
-    \item \textbf{Chapter 1: Introduction} – Provides an overview of the research, outlining the background, objectives, significance, and scope of the study.
+  \item \textbf{Chapter 2: Organization Overview} \\
+  Describes Genese Solution Pvt.\ Ltd., its services, working environment, and organizational structure.
 
-    \item \textbf{Chapter 2: Literature Review} – Provides an extensive review of existing approaches in brain tumor detection utilizing machine learning and deep learning techniques.
+  \item \textbf{Chapter 3: Literature Review / Background Study} \\
+  Covers theoretical concepts related to DevOps, CI/CD, Cloud Computing, AWS services, Infrastructure as Code, and Serverless Architecture.
 
-    \item \textbf{Chapter 3: System Analysis} – Presents detailed system analysis, including comprehensive requirement analysis and feasibility studies.
+  \item \textbf{Chapter 4: Methodology and Tools Used} \\
+  Explains the technologies, tools, and workflow implemented during the internship.
 
-    \item \textbf{Chapter 4: System Design} – Covers the system design aspects, encompassing architectural framework decisions and model design considerations.
+  \item \textbf{Chapter 5: System Design and Implementation} \\
+  Describes the architecture, CI/CD pipelines, serverless deployment structure, IAM configuration, and automation strategies.
 
-    \item \textbf{Chapter 5: Implementation and Testing} – Discusses implementation details and comprehensive testing procedures.
+  \item \textbf{Chapter 6: Results and Discussion} \\
+  Analyzes implementation outcomes, performance improvements, challenges faced, and solutions applied.
 
-    \item \textbf{Chapter 6: Conclusion and Recommendations} – Concludes the research with key findings, practical recommendations, and directions for future research endeavors.
+  \item \textbf{Chapter 7: Conclusion and Future Recommendations} \\
+  Summarizes key learning outcomes and suggests possible improvements and future enhancements.
 
+  \item \textbf{Appendices} \\
+  Includes screenshots, configuration files, code snippets, pipeline diagrams, and additional documentation.
 \end{itemize}
