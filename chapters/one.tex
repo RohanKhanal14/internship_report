@@ -1,29 +1,32 @@
-
 \section*{\Large\centering \textbf{CHAPTER 1 \\ INTRODUCTION }}
 \addcontentsline{toc}{section}{CHAPTER 1: Introduction}
 \setcounter{section}{1}
 
 \subsection{Introduction}
-In recent years, the software development industry has undergone a major transformation with the emergence of DevOps practices and Cloud Computing technologies. Traditional software development methodologies often separated development and operations teams, resulting in slow delivery cycles, frequent deployment failures, infrastructure inconsistencies, and limited scalability. To address these challenges, DevOps has emerged as a cultural and technical movement that integrates development (Dev) and operations (Ops) into a unified workflow, promoting automation, collaboration, continuous integration, and continuous delivery. \cite{HARNESSING_CLOUD_INFRASTRUCTURE}
 
-DevOps is not merely a toolset but a philosophy that emphasizes automation, monitoring, version control, \gls{iac}, containerization, and cloud-based deployment. Combined with cloud computing platforms such as \gls{aws}, DevOps enables organizations to build scalable, resilient, and highly available systems with faster release cycles and improved reliability. \cite{CI/CD}
+The rapid growth of web technologies has significantly transformed how modern software applications are designed and developed. Today’s applications are expected to be interactive, scalable, secure, and responsive across different devices. This shift has increased the demand for full stack developers who can work on both the frontend and backend of web systems and understand how all components integrate into a complete application.
 
-During my internship at Genese Solution Pvt. Ltd., Lalitpur, Nepal, I worked as a Cloud and DevOps Engineering Intern, where I gained hands-on experience in implementing DevOps practices within real-world production environments. The organization specializes in cloud-based infrastructure solutions, automation, and scalable system design. Throughout the internship period, I was actively involved in designing and implementing \gls{cicd} pipelines, managing AWS resources, automating deployment processes using AWS \gls{sam}, configuring \gls{iam} roles and policies, and working with services such as AWS Lambda, CodeBuild, CodePipeline, S3, CloudFormation, EventBridge, and CloudWatch.
+DevOps is not merely a toolset but a philosophy that emphasizes automation, monitoring, version control, infrastructure as code (IaC), containerization, and cloud-based deployment. Combined with cloud computing platforms such as Amazon Web Services (AWS), DevOps enables organizations to build scalable, resilient, and highly available systems with faster release cycles and improved reliability. \cite{CI/CD}
 
-One of the major projects I contributed to involved a serverless architecture using AWS Lambda in a monorepo structure, where multiple independent Lambda functions shared common layers. The deployment was automated through CodePipeline and CodeBuild, enabling efficient version control and environment-based deployment (Development, Staging, Production). This experience provided deep practical exposure to infrastructure automation, cloud security, monitoring, and performance optimization.
+During my internship at Genese Solution Pvt. Ltd., Lalitpur, Nepal, I worked as a Cloud and DevOps Engineering Intern, where I gained hands-on experience in implementing DevOps practices within real-world production environments. The organization specializes in cloud-based infrastructure solutions, automation, and scalable system design. Throughout the internship period, I was actively involved in designing and implementing CI/CD pipelines, managing AWS resources, automating deployment processes using AWS SAM (Serverless Application Model), configuring IAM roles and policies, and working with services such as AWS Lambda, CodeBuild, CodePipeline, S3, CloudFormation, EventBridge, and CloudWatch.
 
-This internship bridged the gap between academic learning and industry practices. It enhanced my understanding of distributed systems, cloud-native architectures, DevOps lifecycle, security best practices, and automation techniques required for modern software delivery.
+One of the most valuable aspects of this internship was understanding how different layers of an application communicate with each other. I learned how to structure backend projects properly, organize routes and controllers, manage middleware, design normalized database schemas, and ensure secure data transmission between client and server. Working in a collaborative environment also strengthened my skills in Git-based version control, debugging, and writing clean, maintainable code.
+
+This internship helped me connect theoretical concepts learned in academic courses with real-world software development practices. It improved my understanding of software development lifecycle (SDLC), system design principles, REST architecture, and performance optimization in full stack applications.
 
 \subsection{Problem Statement}
-In traditional software development environments, several critical challenges exist:
+
+While developing modern web applications, several practical challenges can arise. Many traditional systems suffer from tightly coupled architectures, poor database design, and weak security mechanisms. Without a structured development approach, applications may become difficult to maintain, scale, or extend.
+
+During full stack development, common technical challenges include:
+
 \begin{itemize}
-  \item Manual deployment processes leading to human errors
-  \item Lack of standardized infrastructure configuration
-  \item Poor collaboration between development and operations teams
-  \item Inconsistent environments (development vs.\ production mismatch)
-  \item Slow release cycles
-  \item Difficulty in scaling applications
-  \item Limited monitoring and observability
+  \item Designing a clear separation between frontend and backend logic
+  \item Managing database relationships and optimizing queries
+  \item Implementing secure authentication and authorization mechanisms
+  \item Handling asynchronous operations in backend services
+  \item Managing application state effectively in frontend applications
+  \item Ensuring proper validation and error handling
 \end{itemize}
 
 Organizations aiming to build cloud-based applications often struggle with:
@@ -36,63 +39,88 @@ Organizations aiming to build cloud-based applications often struggle with:
   \item Ensuring security and least-privilege access using IAM policies
 \end{itemize}
 
+Specifically, in serverless monorepo architectures, challenges arise in:
+\begin{itemize}
+  \item Handling shared dependencies (common layers)
+  \item Triggering selective deployments
+  \item Avoiding unnecessary rebuilds
+  \item Maintaining version control for multiple Lambda functions
+  \item Ensuring proper role-based access control
+  \item Managing S3 artifacts and CloudFormation packaging
+\end{itemize}
+
+Therefore, there was a need to design and implement a structured DevOps workflow that would:
+\begin{itemize}
+  \item Automate build, package, and deployment processes
+  \item Enable scalable serverless architecture
+  \item Reduce manual intervention
+  \item Improve deployment reliability
+  \item Enforce security best practices
+  \item Optimize cloud resource usage
+\end{itemize}
+
+% \subsection{Objectives}
+%  To design and implement a convolutional neural network (\gls{cnn}) model, incorporating transfer learning with VGG16 to enhance accuracy, tailored for precise brain tumor detection and classification.
+
 \subsection{Objectives}
 To understand and implement DevOps practices using cloud technologies in a production-level environment.
+% \begin{itemize}
+%     \item To design and implement a convolutional neural network (\gls{cnn}) model.
+%     \item To incorporate transfer learning with VGG16 to enhance accuracy for precise brain tumor detection and classification.
+% \end{itemize}
 
 \subsection{Scope and Limitation}
-\textbf{Scope}\\
+\textbf{Scope}
 The scope of this internship primarily covered:
 \begin{itemize}
-  \item Implementation of DevOps practices in cloud-based environments
-  \item Serverless architecture design using AWS Lambda
-  \item CI/CD pipeline development
-  \item Infrastructure as Code using AWS SAM and CloudFormation
-  \item Cloud security configuration using IAM
-  \item S3 artifact management
-  \item Monitoring and logging setup
-  \item Automation of multi-environment deployments
-  \item Version control integration with Git repositories
+  \item Frontend development using React.js with reusable component design
+  \item Backend API development using Node.js and Express.js
+  \item PostgreSQL database design and query implementation
+  \item Implementation of CRUD operations
+  \item Authentication and authorization mechanisms
+  \item Git-based version control and collaborative development
+  \item Basic deployment and application testing
 \end{itemize}
 
-The internship provided exposure to real-time production systems and enterprise-level deployment strategies. The practical implementation helped understand how scalable and reliable cloud architectures are built in modern organizations.
+The experience provided exposure to real development environments where applications are built based on actual business requirements. It also improved my understanding of how to write production-level code and maintain coding standards within a team.
 
-Furthermore, the internship experience is highly relevant to academic subjects such as:
-\begin{itemize}
-  \item Distributed Systems
-  \item Cloud Computing
-  \item Operating Systems
-  \item Database Systems
-  \item Software Engineering
-  \item Computer Networks
-\end{itemize}
+The internship is directly related to academic subjects such as Software Engineering, Database Management Systems, Web Technology, and Object-Oriented Programming.
 
-\textbf{Limitation}\\
+\textbf{Limitation}
 Despite the extensive exposure, certain limitations were present:
 \begin{itemize}
-  \item Limited access to confidential production data
-  \item Restricted IAM permissions due to security policies
-  \item Time-bound internship duration (12 weeks)
-  \item Dependency on organizational infrastructure decisions
-  \item Limited exposure to on-premises DevOps environments
-  \item Focus primarily on AWS (not multi-cloud platforms)
+  \item The internship duration was limited.
+  \item Access to highly sensitive production data was restricted.
+  \item Exposure to large-scale enterprise architectures was limited.
+  \item The primary focus remained on the PERN stack rather than multiple technology stacks.
 \end{itemize}
 
-Additionally, some enterprise-level configurations (e.g., advanced security compliance, cost governance strategies, and enterprise networking design) were outside the scope of the internship.
-
+Some advanced topics such as large-scale distributed systems, enterprise-level DevOps automation, and high-availability system design were beyond the scope of this internship.
 
 \subsection{Report Organization}
-This internship report is organized into multiple chapters to systematically present the learning experience and technical contributions made during the internship.
+
+This report is organized into several chapters to clearly present the internship experience and technical contributions:
+
 \begin{itemize}
   \item \textbf{Chapter 1: Introduction} \\
   Provides background, objectives, problem statement, scope, and structure of the report.
 
-  \item \textbf{Chapter 2: Organization Details and Literature Review} \\
-  Describes Genese Solution Pvt.\ Ltd., its services, working environment, and organizational structure and covers theoretical concepts related to DevOps.
+  \item \textbf{Chapter 2: Organization Overview} \\
+  Describes Genese Solution Pvt.\ Ltd., its services, working environment, and organizational structure.
 
-  \item \textbf{Chapter 3: Internship Activities } \\
- Internship Activities covers the practical tasks, technical projects, responsibilities, and hands-on experiences undertaken during the internship period.
+  \item \textbf{Chapter 3: Literature Review / Background Study} \\
+  Covers theoretical concepts related to DevOps, CI/CD, Cloud Computing, AWS services, Infrastructure as Code, and Serverless Architecture.
 
-  \item \textbf{Chapter 4: Conclusion and Future Recommendations} \\
+  \item \textbf{Chapter 4: Methodology and Tools Used} \\
+  Explains the technologies, tools, and workflow implemented during the internship.
+
+  \item \textbf{Chapter 5: System Design and Implementation} \\
+  Describes the architecture, CI/CD pipelines, serverless deployment structure, IAM configuration, and automation strategies.
+
+  \item \textbf{Chapter 6: Results and Discussion} \\
+  Analyzes implementation outcomes, performance improvements, challenges faced, and solutions applied.
+
+  \item \textbf{Chapter 7: Conclusion and Future Recommendations} \\
   Summarizes key learning outcomes and suggests possible improvements and future enhancements.
 
   \item \textbf{Appendices} \\
