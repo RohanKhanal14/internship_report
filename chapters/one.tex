@@ -6,9 +6,9 @@
 
 The rapid growth of web technologies has significantly transformed how modern software applications are designed and developed. Today’s applications are expected to be interactive, scalable, secure, and responsive across different devices. This shift has increased the demand for full stack developers who can work on both the frontend and backend of web systems and understand how all components integrate into a complete application.
 
-DevOps is not merely a toolset but a philosophy that emphasizes automation, monitoring, version control, infrastructure as code (IaC), containerization, and cloud-based deployment. Combined with cloud computing platforms such as Amazon Web Services (AWS), DevOps enables organizations to build scalable, resilient, and highly available systems with faster release cycles and improved reliability. \cite{CI/CD}
+Full stack development allows a developer to handle the entire workflow of a web application, from designing user interfaces to building server-side logic and managing databases. During my internship at \textbf{Information Care Pvt. Ltd.}, I worked as a \textbf{Software Development Intern (Full Stack Web Developer)} where I primarily used the PERN stack (PostgreSQL, Express.js, React.js, and Node.js). This stack enabled me to work with JavaScript across the application while also gaining experience in relational database management using PostgreSQL.
 
-During my internship at Genese Solution Pvt. Ltd., Lalitpur, Nepal, I worked as a Cloud and DevOps Engineering Intern, where I gained hands-on experience in implementing DevOps practices within real-world production environments. The organization specializes in cloud-based infrastructure solutions, automation, and scalable system design. Throughout the internship period, I was actively involved in designing and implementing CI/CD pipelines, managing AWS resources, automating deployment processes using AWS SAM (Serverless Application Model), configuring IAM roles and policies, and working with services such as AWS Lambda, CodeBuild, CodePipeline, S3, CloudFormation, EventBridge, and CloudWatch.
+Throughout the internship, I was involved in developing and maintaining full stack web applications based on real client requirements. On the frontend, I built reusable React components and designed responsive user interfaces to improve user experience. On the backend, I developed RESTful APIs using Node.js and Express.js, implemented authentication mechanisms using JWT, and handled database interactions through structured queries in PostgreSQL.
 
 One of the most valuable aspects of this internship was understanding how different layers of an application communicate with each other. I learned how to structure backend projects properly, organize routes and controllers, manage middleware, design normalized database schemas, and ensure secure data transmission between client and server. Working in a collaborative environment also strengthened my skills in Git-based version control, debugging, and writing clean, maintainable code.
 
@@ -29,49 +29,29 @@ During full stack development, common technical challenges include:
   \item Ensuring proper validation and error handling
 \end{itemize}
 
-Organizations aiming to build cloud-based applications often struggle with:
-\begin{itemize}
-  \item Automating deployments efficiently
-  \item Managing infrastructure securely
-  \item Maintaining environment consistency
-  \item Implementing continuous integration and continuous deployment (CI/CD)
-  \item Managing multiple microservices or serverless functions efficiently
-  \item Ensuring security and least-privilege access using IAM policies
-\end{itemize}
+In PERN stack applications specifically, developers must ensure that React components efficiently consume APIs, Express routes are well-structured, PostgreSQL schemas are normalized, and Node.js handles concurrent requests properly. Without proper design practices, issues such as slow performance, redundant code, and security vulnerabilities can occur.
 
-Specifically, in serverless monorepo architectures, challenges arise in:
-\begin{itemize}
-  \item Handling shared dependencies (common layers)
-  \item Triggering selective deployments
-  \item Avoiding unnecessary rebuilds
-  \item Maintaining version control for multiple Lambda functions
-  \item Ensuring proper role-based access control
-  \item Managing S3 artifacts and CloudFormation packaging
-\end{itemize}
-
-Therefore, there was a need to design and implement a structured DevOps workflow that would:
-\begin{itemize}
-  \item Automate build, package, and deployment processes
-  \item Enable scalable serverless architecture
-  \item Reduce manual intervention
-  \item Improve deployment reliability
-  \item Enforce security best practices
-  \item Optimize cloud resource usage
-\end{itemize}
-
-% \subsection{Objectives}
-%  To design and implement a convolutional neural network (\gls{cnn}) model, incorporating transfer learning with VGG16 to enhance accuracy, tailored for precise brain tumor detection and classification.
+Therefore, it was necessary to follow a structured and practical approach to build scalable and secure full stack applications that maintain code quality and performance standards.
 
 \subsection{Objectives}
-To understand and implement DevOps practices using cloud technologies in a production-level environment.
-% \begin{itemize}
-%     \item To design and implement a convolutional neural network (\gls{cnn}) model.
-%     \item To incorporate transfer learning with VGG16 to enhance accuracy for precise brain tumor detection and classification.
-% \end{itemize}
+
+The main objective of this internship was to gain practical experience in full stack web development using the PERN stack in a professional environment. The specific objectives were:
+
+\begin{itemize}
+  \item To design and develop dynamic web applications using PostgreSQL, Express.js, React.js, and Node.js.
+  \item To implement RESTful APIs following proper architectural practices.
+  \item To design efficient and normalized relational database schemas.
+  \item To implement authentication and authorization using JWT.
+  \item To improve problem-solving, debugging, and code optimization skills.
+  \item To understand teamwork, version control, and real-world development workflows.
+\end{itemize}
 
 \subsection{Scope and Limitation}
+
 \textbf{Scope}
-The scope of this internship primarily covered:
+
+The internship mainly focused on practical full stack development tasks, including:
+
 \begin{itemize}
   \item Frontend development using React.js with reusable component design
   \item Backend API development using Node.js and Express.js
@@ -87,12 +67,14 @@ The experience provided exposure to real development environments where applicat
 The internship is directly related to academic subjects such as Software Engineering, Database Management Systems, Web Technology, and Object-Oriented Programming.
 
 \textbf{Limitation}
-Despite the extensive exposure, certain limitations were present:
+
+Despite the valuable learning experience, there were certain limitations:
+
 \begin{itemize}
   \item The internship duration was limited.
   \item Access to highly sensitive production data was restricted.
   \item Exposure to large-scale enterprise architectures was limited.
-  \item The primary focus remained on the PERN stack rather than multiple technology stacks
+  \item The primary focus remained on the PERN stack rather than multiple technology stacks.
 \end{itemize}
 
 Some advanced topics such as large-scale distributed systems, enterprise-level DevOps automation, and high-availability system design were beyond the scope of this internship.
@@ -102,27 +84,12 @@ Some advanced topics such as large-scale distributed systems, enterprise-level D
 This report is organized into several chapters to clearly present the internship experience and technical contributions:
 
 \begin{itemize}
-  \item \textbf{Chapter 1: Introduction} \\
-  Provides background, objectives, problem statement, scope, and structure of the report.
-
-  \item \textbf{Chapter 2: Organization Overview} \\
-  Describes Genese Solution Pvt.\ Ltd., its services, working environment, and organizational structure.
-
-  \item \textbf{Chapter 3: Literature Review / Background Study} \\
-  Covers theoretical concepts related to DevOps, CI/CD, Cloud Computing, AWS services, Infrastructure as Code, and Serverless Architecture.
-
-  \item \textbf{Chapter 4: Methodology and Tools Used} \\
-  Explains the technologies, tools, and workflow implemented during the internship.
-
-  \item \textbf{Chapter 5: System Design and Implementation} \\
-  Describes the architecture, CI/CD pipelines, serverless deployment structure, IAM configuration, and automation strategies.
-
-  \item \textbf{Chapter 6: Results and Discussion} \\
-  Analyzes implementation outcomes, performance improvements, challenges faced, and solutions applied.
-
-  \item \textbf{Chapter 7: Conclusion and Future Recommendations} \\
-  Summarizes key learning outcomes and suggests possible improvements and future enhancements.
-
-  \item \textbf{Appendices} \\
-  Includes screenshots, configuration files, code snippets, pipeline diagrams, and additional documentation.
+  \item \textbf{Chapter 1: Introduction} – Overview of the internship, objectives, scope, and problem statement.
+  \item \textbf{Chapter 2: Organization Overview} – Introduction to Information Care Pvt.\ Ltd. and its working environment.
+  \item \textbf{Chapter 3: Literature Review / Background Study} – Theoretical concepts related to full stack development and PERN stack technologies.
+  \item \textbf{Chapter 4: Methodology and Tools Used} – Technologies and development workflow followed during the internship.
+  \item \textbf{Chapter 5: System Design and Implementation} – Architecture, database design, API structure, and frontend implementation details.
+  \item \textbf{Chapter 6: Results and Discussion} – Outcomes, challenges faced, and lessons learned.
+  \item \textbf{Chapter 7: Conclusion and Future Recommendations} – Summary of experience and possible improvements.
+  \item \textbf{Appendices} – Additional technical documentation and code references.
 \end{itemize}
