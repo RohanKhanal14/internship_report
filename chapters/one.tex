@@ -4,81 +4,59 @@
 \setcounter{section}{1}
 
 \subsection{Introduction}
-In recent years, the software development industry has undergone a major transformation with the emergence of DevOps practices and Cloud Computing technologies. Traditional software development methodologies often separated development and operations teams, resulting in slow delivery cycles, frequent deployment failures, infrastructure inconsistencies, and limited scalability. To address these challenges, DevOps has emerged as a cultural and technical movement that integrates development (Dev) and operations (Ops) into a unified workflow, promoting automation, collaboration, continuous integration, and continuous delivery \parencite{HARNESSING_CLOUD_INFRASTRUCTURE}.
+With the rapid growth of digital journalism and online media platforms, web-based news portals have become a primary source of information dissemination. Modern news portals rely on dynamic web technologies, database-driven systems, and content management platforms to manage large volumes of real-time information efficiently. These systems require continuous monitoring, security implementation, performance optimization, and structured content management to ensure reliability and scalability.
 
-DevOps is not merely a toolset but a philosophy that emphasizes automation, monitoring, version control, \gls{iac}, containerization, and cloud-based deployment. Combined with cloud computing platforms such as \gls{aws}, DevOps enables organizations to build scalable, resilient, and highly available systems with faster release cycles and improved reliability \parencite{CI/CD}.
+During my internship at Kendrabindu Online Pvt. Ltd., I worked as a News Portal Administrator, where I was responsible for managing and maintaining the organization's digital news platform. The internship provided practical exposure to real-time web application management, database operations, server monitoring, SEO implementation, and web security practices.
 
-During my internship at Genese Solution Pvt. Ltd., Lalitpur, Nepal, I worked as a Cloud and DevOps Engineering Intern, where I gained hands-on experience in implementing DevOps practices within real-world production environments. The organization specializes in cloud-based infrastructure solutions, automation, and scalable system design. Throughout the internship period, I was actively involved in designing and implementing \gls{cicd} pipelines, managing AWS resources, automating deployment processes using AWS \gls{sam}, configuring \gls{iam} roles and policies, and working with services such as AWS Lambda, CodeBuild, CodePipeline, S3, CloudFormation, EventBridge, and CloudWatch.
-
-One of the major projects I contributed to involved a serverless architecture using AWS Lambda in a monorepo structure, where multiple independent Lambda functions shared common layers. The deployment was automated through CodePipeline and CodeBuild, enabling efficient version control and environment-based deployment (Development, Staging, Production). This experience provided deep practical exposure to infrastructure automation, cloud security, monitoring, and performance optimization.
-
-This internship bridged the gap between academic learning and industry practices. It enhanced my understanding of distributed systems, cloud-native architectures, DevOps lifecycle, security best practices, and automation techniques required for modern software delivery.
+The internship experience was highly relevant to academic subjects such as Web Technology, Database Management System (DBMS), Software Engineering, Computer Networks, and Information Security studied in the BSc CSIT program.
 
 \subsection{Problem Statement}
-In traditional software development environments, several critical challenges exist:
+Digital news portals face several technical challenges:
 \begin{itemize}
-  \item Manual deployment processes leading to human errors
-  \item Lack of standardized infrastructure configuration
-  \item Poor collaboration between development and operations teams
-  \item Inconsistent environments (development vs.\ production mismatch)
-  \item Slow release cycles
-  \item Difficulty in scaling applications
-  \item Limited monitoring and observability
+  \item Efficient handling of large-scale content updates
+  \item Maintaining database consistency and integrity
+  \item Ensuring website security against vulnerabilities
+  \item Improving website performance and load time
+  \item Managing multi-user access control
+  \item Implementing proper SEO for search visibility
+  \item Monitoring traffic and system health
 \end{itemize}
 
-Organizations aiming to build cloud-based applications often struggle with:
+Organizations must ensure secure, scalable, and optimized systems to maintain reliability and user engagement.
 \begin{itemize}
-  \item Automating deployments efficiently
-  \item Managing infrastructure securely
-  \item Maintaining environment consistency
-  \item Implementing continuous integration and continuous deployment (CI/CD)
-  \item Managing multiple microservices or serverless functions efficiently
-  \item Ensuring security and least-privilege access using IAM policies
+  \item To understand the architecture of a real-world news portal system
+\item To manage and optimize a database-driven CMS
+\item To implement security and performance best practices
+\item To apply SEO and analytics techniques
+\item To gain practical knowledge of hosting and server management
+\item To bridge academic theory with industry practices
 \end{itemize}
 
 \subsection{Objectives}
-To understand and implement DevOps practices using cloud technologies in a production-level environment.
+The objective of this project is to understand a real-world news portal architecture, manage and optimize a database-driven CMS, implement security and performance best practices, apply SEO and analytics techniques, and connect academic knowledge with industry practices.
 
 \subsection{Scope and Limitation}
 \textbf{Scope}\\
-The scope of this internship primarily covered:
+The internship covered:
 \begin{itemize}
-  \item Implementation of DevOps practices in cloud-based environments
-  \item Serverless architecture design using AWS Lambda
-  \item CI/CD pipeline development
-  \item Infrastructure as Code using AWS SAM and CloudFormation
-  \item Cloud security configuration using IAM
-  \item S3 artifact management
-  \item Monitoring and logging setup
-  \item Automation of multi-environment deployments
-  \item Version control integration with Git repositories
-\end{itemize}
-
-The internship provided exposure to real-time production systems and enterprise-level deployment strategies. The practical implementation helped understand how scalable and reliable cloud architectures are built in modern organizations.
-
-Furthermore, the internship experience is highly relevant to academic subjects such as:
-\begin{itemize}
-  \item Distributed Systems
-  \item Cloud Computing
-  \item Operating Systems
-  \item Database Systems
-  \item Software Engineering
-  \item Computer Networks
+ \item CMS administration
+\item Database management (MySQL)
+\item Frontend optimization (HTML, CSS, JavaScript)
+\item Server configuration and hosting management
+\item SEO implementation
+\item Website analytics and reporting
+\item API integration
+\item Security practices and backup automation
 \end{itemize}
 
 \textbf{Limitation}\\
 Despite the extensive exposure, certain limitations were present:
 \begin{itemize}
-  \item Limited access to confidential production data
-  \item Restricted IAM permissions due to security policies
-  \item Time-bound internship duration (12 weeks)
-  \item Dependency on organizational infrastructure decisions
-  \item Limited exposure to on-premises DevOps environments
-  \item Focus primarily on AWS (not multi-cloud platforms)
+  \item Limited access to confidential business data
+\item Restricted server-level administrative permissions
+\item Time-bound duration (12 weeks)
+\item Limited exposure to advanced cloud-based infrastructure
 \end{itemize}
-
-Additionally, some enterprise-level configurations (e.g., advanced security compliance, cost governance strategies, and enterprise networking design) were outside the scope of the internship.
-
 
 \subsection{Report Organization}
 This internship report is organized into multiple chapters to systematically present the learning experience and technical contributions made during the internship.
@@ -87,7 +65,7 @@ This internship report is organized into multiple chapters to systematically pre
   Provides background, objectives, problem statement, scope, and structure of the report.
 
   \item \textbf{Chapter 2: Organization Details and Literature Review} \\
-  Describes Genese Solution Pvt.\ Ltd., its services, working environment, and organizational structure and covers theoretical concepts related to DevOps.
+  Describes Kendrabindu Online Pvt. Ltd., its services, working environment, and organizational structure and covers theoretical concepts related to News Portal Administration.
 
   \item \textbf{Chapter 3: Internship Activities } \\
  Internship Activities covers the practical tasks, technical projects, responsibilities, and hands-on experiences undertaken during the internship period.
