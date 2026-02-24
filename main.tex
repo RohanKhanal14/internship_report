@@ -33,6 +33,7 @@
 \newcommand{\CampusName}{Central Campus of Technology}
 \newcommand{\CampusAddr}{Dharan - 14}
 \newcommand{\StudentName}{Rohan Khanal}
+\newcommand{\Program}{BSC. CSIT (Batch of 2078), 8th Semester}
 \newcommand{\OrgName}{Genese Solution Pvt. Ltd}
 \newcommand{\OrgAddr}{Bakundol, Lalitpur, Nepal}
 \newcommand{\LogArrayStretch}{1.1}
@@ -60,6 +61,8 @@
 \newacronym{gump}{GUMP}{Genese Unified Mailing Platform}
 \newacronym{sam}{SAM}{Serverless Application Model}
 
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{biblio.bib}
 
 \begin{document}
 \glsaddall
@@ -135,11 +138,11 @@
 
 {
 \newpage
-\section*{\Large\centering \textbf{REFERENCES}}
+\defbibheading{bibliography}{
+  \section*{\Large\centering\textbf{REFERENCES}}
+}
 \addcontentsline{toc}{section}{REFERENCES}
-\renewcommand{\refname}{}
-\bibliographystyle{apalike}
-\bibliography{biblio}
+\printbibliography
 }
 
 \newpage
