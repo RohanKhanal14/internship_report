@@ -66,7 +66,7 @@ The department follows a practical development workflow where frontend and backe
 
 \subsection{Literature Review}
 
-Full stack web development refers to the end-to-end design and implementation of web applications, encompassing both client-side (frontend) and server-side (backend) components. Modern web applications require a layered architecture that separates concerns into distinct layers: presentation layer (frontend UI), business logic layer (backend API and server logic), and data layer (database management) \cite{Newman2015}.
+Full stack web development refers to the end-to-end design and implementation of web applications, encompassing both client-side (frontend) and server-side (backend) components. Modern web applications require a layered architecture that separates concerns into distinct layers: presentation layer (frontend UI), business logic layer (backend API and server logic), and data layer (database management) \parencite{Newman2015}.
 
 The PERN stack (PostgreSQL, Express.js, React.js, Node.js) represents a modern, unified approach to full stack development, enabling developers to use JavaScript across most application layers while leveraging PostgreSQL for robust relational database management.
 
@@ -78,17 +78,17 @@ React.js is a component-based JavaScript library for building user interfaces. R
 
 Node.js provides an event-driven, non-blocking I/O runtime that efficiently handles concurrent connections, making it ideal for I/O-intensive operations like database queries. Express.js is a lightweight web framework built on Node.js that simplifies API development through routing, middleware integration, and request/response handling. 
 
-RESTful API architecture, commonly implemented using Express.js, follows the representational state transfer (REST) principles that leverage standard HTTP methods and status codes for intuitive, scalable API design \cite{Fielding2000}. Express.js middleware implements the Chain of Responsibility pattern, where requests pass through composable functions for processing (logging, validation, authentication, compression).
+RESTful API architecture, commonly implemented using Express.js, follows the representational state transfer (REST) principles that leverage standard HTTP methods and status codes for intuitive, scalable API design \parencite{Fielding2000}. Express.js middleware implements the Chain of Responsibility pattern, where requests pass through composable functions for processing (logging, validation, authentication, compression).
 
 \textbf{Authentication and Security}
 
-Secure applications implement JSON Web Token (JWT) based authentication, which provides stateless token-based authentication suitable for distributed systems \cite{Jones2015}. JWTs are digitally signed tokens containing user claims, eliminating the need for server-side session storage and reducing session management overhead. Role-based access control (RBAC) further enhances security by restricting API endpoints based on user roles.
+Secure applications implement JSON Web Token (JWT) based authentication, which provides stateless token-based authentication suitable for distributed systems \parencite{Jones2015}. JWTs are digitally signed tokens containing user claims, eliminating the need for server-side session storage and reducing session management overhead. Role-based access control (RBAC) further enhances security by restricting API endpoints based on user roles.
 
-Input validation and error handling are critical for preventing injection attacks and malformed data. Server-side validation is essential as client-side validation can be bypassed. Secure password hashing with bcrypt or Argon2 and proper error handling prevent common vulnerabilities \cite{McGraw2006}.
+Input validation and error handling are critical for preventing injection attacks and malformed data. Server-side validation is essential as client-side validation can be bypassed. Secure password hashing with bcrypt or Argon2 and proper error handling prevent common vulnerabilities \parencite{McGraw2006}.
 
 \textbf{Database Design: PostgreSQL}
 
-PostgreSQL is an advanced relational database management system known for reliability and ACID compliance (Atomicity, Consistency, Isolation, Durability). Database design using normalization principles reduces data redundancy and improves data integrity by organizing data into tables and defining relationships through foreign keys \cite{Codd1970}.
+PostgreSQL is an advanced relational database management system known for reliability and ACID compliance (Atomicity, Consistency, Isolation, Durability). Database design using normalization principles reduces data redundancy and improves data integrity by organizing data into tables and defining relationships through foreign keys \parencite{Codd1970}.
 
 Key design considerations include:
 \begin{itemize}
@@ -100,12 +100,12 @@ Key design considerations include:
 
 \textbf{Software Development Practices}
 
-Structured approaches to software development ensure quality and reliability. Agile methodologies emphasize iterative development, continuous feedback, and team collaboration through sprints and regular reviews \cite{Beck2001}. Git-based version control enables collaborative development, code reviews, and complete project history maintenance. Branching strategies like Git Flow allow parallel development while maintaining code quality.
+Structured approaches to software development ensure quality and reliability. Agile methodologies emphasize iterative development, continuous feedback, and team collaboration through sprints and regular reviews \parencite{Beck2001}. Git-based version control enables collaborative development, code reviews, and complete project history maintenance. Branching strategies like Git Flow allow parallel development while maintaining code quality.
 
-Test-Driven Development (TDD) involves writing tests before implementation, ensuring code is testable and requirements are clear. Comprehensive testing through unit tests, integration tests, and end-to-end tests improves application reliability \cite{Sommerville2010}.
+Test-Driven Development (TDD) involves writing tests before implementation, ensuring code is testable and requirements are clear. Comprehensive testing through unit tests, integration tests, and end-to-end tests improves application reliability \parencite{Sommerville2010}.
 
 \textbf{Continuous Integration and Continuous Delivery}
 
-CI/CD pipelines automate building, testing, and deployment processes. Continuous integration automatically tests code on each commit, detecting integration issues early. Continuous delivery automates deployment to staging environments, while continuous deployment automatically deploys to production \cite{Humble2010}. Automation reduces human error and accelerates feature delivery while maintaining code quality.
+CI/CD pipelines automate building, testing, and deployment processes. Continuous integration automatically tests code on each commit, detecting integration issues early. Continuous delivery automates deployment to staging environments, while continuous deployment automatically deploys to production \parencite{Humble2010}. Automation reduces human error and accelerates feature delivery while maintaining code quality.
 
 In summary, the PERN stack provides a cohesive platform for full stack web development. Component-based React architecture enables responsive, maintainable frontend development. Node.js and Express.js facilitate scalable backend development with well-designed REST APIs. PostgreSQL ensures reliable, normalized data management. Combined with secure authentication, proper validation, comprehensive testing, and CI/CD practices, developers can build reliable, scalable, and maintainable web applications that meet professional standards.

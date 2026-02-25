@@ -46,20 +46,27 @@
 \makenoidxglossaries
 
 % Define acronyms (abbreviations)
-\newacronym{aws}{AWS}{Amazon Web Services}
+\newacronym{pern}{PERN}{PostgreSQL, Express.js, React.js, Node.js}
+\newacronym{api}{API}{Application Programming Interface}
+\newacronym{rest}{REST}{Representational State Transfer}
+\newacronym{crud}{CRUD}{Create, Read, Update, Delete}
+\newacronym{jwt}{JWT}{JSON Web Token}
+\newacronym{rbac}{RBAC}{Role-Based Access Control}
+\newacronym{ui}{UI}{User Interface}
+\newacronym{ux}{UX}{User Experience}
+\newacronym{cms}{CMS}{Content Management System}
+\newacronym{seo}{SEO}{Search Engine Optimization}
+\newacronym{sql}{SQL}{Structured Query Language}
+\newacronym{acid}{ACID}{Atomicity, Consistency, Isolation, Durability}
 \newacronym{cicd}{CI/CD}{Continuous Integration and Continuous Delivery}
-\newacronym{iac}{IaC}{Infrastructure as Code}
-\newacronym{iam}{IAM}{Identity and Access Management}
-\newacronym{rds}{RDS}{Relational Database Service}
-\newacronym{ec2}{EC2}{Elastic Compute Cloud}
-\newacronym{s3}{S3}{Simple Storage Service}
-\newacronym{waf}{WAF}{Web Application Firewall}
-\newacronym{ssm}{SSM}{Systems Manager}
-\newacronym{dkim}{DKIM}{DomainKeys Identified Mail}
-\newacronym{smtp}{SMTP}{Simple Mail Transfer Protocol}
-\newacronym{gump}{GUMP}{Genese Unified Mailing Platform}
-\newacronym{sam}{SAM}{Serverless Application Model}
+\newacronym{tdd}{TDD}{Test-Driven Development}
+\newacronym{sdlc}{SDLC}{Software Development Lifecycle}
+\newacronym{dom}{DOM}{Document Object Model}
+\newacronym{io}{I/O}{Input/Output}
+\newacronym{http}{HTTP}{Hypertext Transfer Protocol}
 
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{biblio.bib}
 
 \begin{document}
 \glsaddall
@@ -135,11 +142,11 @@
 
 {
 \newpage
-\section*{\Large\centering \textbf{REFERENCES}}
+\defbibheading{bibliography}{
+  \section*{\Large\centering\textbf{REFERENCES}}
+}
 \addcontentsline{toc}{section}{REFERENCES}
-\renewcommand{\refname}{}
-\bibliographystyle{IEEEtran}
-\bibliography{biblio}
+\printbibliography
 }
 
 \newpage
